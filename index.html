@@ -6,6 +6,7 @@
 </head>
 <body>
 <!-- add a skip link that skips to the main content -->
+<a href="#">Skip to Main Content</a>
 <!-- add correct heading levels -->
   <header>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
@@ -17,13 +18,18 @@
       <path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2"></path>
       <path d="M22 12h-1"></path>
     </svg> 
-    Transform Your Life at Limitless Fitness
+    <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
     
-      src="images/facility.jpg"
+  <picture>
+    <source media="(max-width: 600px)" srcset="images/facility-small.jpg">
+    <source media="(max-width: 1200px)" srcset="images/facility-medium.jpg">
+    <img src="images/facility.jpg" alt="Modern gym facility with various workout equipment and people exercising">
+  </picture>      
+<!-- src="images/facility.jpg" -->
 
   </header>
   <nav>
